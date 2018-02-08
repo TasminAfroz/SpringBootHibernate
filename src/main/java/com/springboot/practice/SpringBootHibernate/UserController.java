@@ -35,4 +35,12 @@ public class UserController {
 		userRepository.save(user);
 		return "c";
 	}
+	@GetMapping("userDetails")
+	public String userDetails(@ModelAttribute User user, Model model) {
+		
+		
+		model.addAttribute("users",userRepository.findAll());
+//		userRepository.findAll();
+		return "userDetails";
+	}
 }

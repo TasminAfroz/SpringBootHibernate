@@ -45,13 +45,13 @@
 						
 						
 			
-							<tr>
+							<tr  th:each = "user: ${users}">
 								<td><input type="checkbox" class="checkthis" /></td>
-								<td>th:text= "'${user.firstName}'"</td>
-								<td>th:text= "'${user.lastName}'"</td>
-								<td>th:text= "'${user.billingCity}'"</td>
-								<td>th:text= "'${user.email}'"</td>
-								<td>th:text= "'${user.contactNo}'"</td>
+								<td>th:text= "${user.firstName}"</td>
+								<td>th:text= "${user.lastName}"</td>
+								<td>th:text= "${user.billingCity}"</td>
+								<td>th:text= "${user.email}"</td>
+								<td>th:text= "${user.contactNo}"</td>
 							
 								<td><p data-placement="top" data-toggle="tooltip"
 										title="Edit">
