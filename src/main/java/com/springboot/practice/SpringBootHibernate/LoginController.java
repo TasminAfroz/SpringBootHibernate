@@ -9,13 +9,13 @@ import com.springboot.practice.SpringBootHibernate.Model.User;
 
 @Controller
 public class LoginController {
-	@GetMapping ("/signup")
-		 public String signUp(Model model) {
-		model.addAttribute("user", new User());
-		return "signUp";
-	}
-		
-	
+//	@GetMapping ("/signup")
+//		 public String signUp(Model model) {
+//		model.addAttribute("user", new User());
+//		return "signUp";
+//	}
+//		
+//	
 	
 	
 

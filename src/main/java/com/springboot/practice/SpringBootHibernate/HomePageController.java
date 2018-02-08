@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomePageController {
 	@GetMapping("/")
 	public String showHomePage() {
-		return "faltu";
+		return "homePage";
 	}
 	
 
