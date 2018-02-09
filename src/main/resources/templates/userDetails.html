@@ -17,7 +17,7 @@
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" th:src="@{/js/userDetails.js}"></script>
 	<div class="container">
 		<div class="row">
 
@@ -45,13 +45,13 @@
 						
 						
 			
-							<tr  th:each = "user: ${users}">
+							<tr  th:each = "user: ${userList}">
 								<td><input type="checkbox" class="checkthis" /></td>
-								<td>th:text= "${user.firstName}"</td>
-								<td>th:text= "${user.lastName}"</td>
-								<td>th:text= "${user.billingCity}"</td>
-								<td>th:text= "${user.email}"</td>
-								<td>th:text= "${user.contactNo}"</td>
+								<td th:text= "${user.firstName}"></td>
+								<td th:text= "${user.lastName}"></td>
+								<td th:text= "${user.billingCity}"></td>
+								<td th:text= "${user.email}"></td>
+								<td th:text= "${user.contactNo}"></td>
 							
 								<td><p data-placement="top" data-toggle="tooltip"
 										title="Edit">
